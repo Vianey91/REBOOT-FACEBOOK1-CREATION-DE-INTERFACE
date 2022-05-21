@@ -7,13 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="asset/css/main.css">
 </head>
 
 <body>
     <div class="container">
-        <div class="container-login" style="display: none">
+        <div class="container-login">
             <div class="login-title">
                 <h1>facebook</h1>
                 <p>Avec Facebook, partagez et restez en contact avec votre entourage</p>
@@ -26,7 +28,7 @@
                     <div class="form-row">
                         <input type="password" placeholder="mot de passe">
                     </div>
-                    
+
                     <div class="form-button">
                         <button class="bt-login-submit">Connexion</button>
 
@@ -39,17 +41,17 @@
                     </div>
                     <div class="divider"></div>
                     <div class="form-button">
-                        <button class="bt-login-create-account">Créer un compte</button>
+                        <button class="bt-login-create-account" id="create-account-button">Créer un compte</button>
                     </div>
                 </form>
             </div>
             <div class="login-footer">
-                <p> <a href="#">Créer une page</a>  pour une célébrité, un groupe ou une entreprise.</p>
+                <p> <a href="#">Créer une page</a> pour une célébrité, un groupe ou une entreprise.</p>
             </div>
         </div>
-        
-        <div class="container-register">
-            <div class="close">
+        <div class="overlay" id="overlay"></div>
+        <div class="container-register" id="register-popup">
+            <div class="close" id="close-register">
                 <i class="fa-solid fa-xmark"></i>
             </div>
             <div class="register-title">
@@ -80,7 +82,7 @@
                                 <option value="5">5</option>
                                 <option value="6">6</option>
                             </select>
-                        
+
                             <select name="" id="" class="month">
                                 <option value="janvier">janvier</option>
                                 <option value="février">février</option>
@@ -104,23 +106,27 @@
                         <div class="form-radio-items">
                             <div class="form-radio-item">
                                 <label for="Femme">Femme</label>
-                                <input type="radio" name="genre" id="femme"/>
+                                <input type="radio" name="genre" id="femme" />
                             </div>
                             <div class="form-radio-item">
                                 <label for="Homme">Homme</label>
-                                <input type="radio" name="genre" id="homme"/>
+                                <input type="radio" name="genre" id="homme" />
                             </div>
                             <div class="form-radio-item">
                                 <label for="Autre">Personnalisé</label>
-                                <input type="radio" name="genre" id="autre"/>
+                                <input type="radio" name="genre" id="autre" />
                             </div>
                         </div>
                     </div>
                     <div class="form-register-infos">
-                        En cliquant sur S’inscrire, vous acceptez nos Conditions générales. Découvrez comment nous recueillons,
-                        utilisons et partageons vos données en lisant notre Politique d’utilisation des données et comment nous
-                        utilisons les cookies et autres technologies similaires en consultant notre Politique d’utilisation des
-                        cookies. Vous recevrez peut-être des notifications par texto de notre part et vous pouvez à tout moment
+                        En cliquant sur S’inscrire, vous acceptez nos Conditions générales. Découvrez comment nous
+                        recueillons,
+                        utilisons et partageons vos données en lisant notre Politique d’utilisation des données et
+                        comment nous
+                        utilisons les cookies et autres technologies similaires en consultant notre Politique
+                        d’utilisation des
+                        cookies. Vous recevrez peut-être des notifications par texto de notre part et vous pouvez à tout
+                        moment
                         vous désabonner.
                     </div>
                     <div class="form-register-button">
@@ -129,8 +135,10 @@
                 </form>
             </div>
         </div>
-        
-       
+
+
     </div>
+    <script src="/asset/js/script.js"></script>
 </body>
+
 </html>

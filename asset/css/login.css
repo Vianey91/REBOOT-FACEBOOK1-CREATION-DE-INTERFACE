@@ -92,6 +92,10 @@
 
     .login-title{
         text-align: left;
+        align-self: center;
+    }
+    .login-form {
+        width: 400px;
     }
 }
 
